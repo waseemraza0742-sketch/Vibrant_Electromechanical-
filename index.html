@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibrant Electromechanical Contracting LLC | UAE MEP Contractor | Vibrant Electromechanical Contracting LLC</title>
+  <meta name="description" content="Vibrant Electromechanical Contracting LLC is a UAE MEP contractor providing electrical, mechanical and electromechanical contracting, installation and maintenance services.">
+  <meta name="keywords" content="Vibrant Electromechanical Contracting LLC, MEP contractor UAE, electrical contractor Abu Dhabi, mechanical contractor UAE, HVAC, plumbing, electromechanical">
+  <meta name="theme-color" content="#f58220">
+  <meta property="og:title" content="Vibrant Electromechanical Contracting LLC">
+  <meta property="og:description" content="MEP contracting, electrical, mechanical and electromechanical services across the UAE.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logo_new.jpeg">
+  <style>
+    :root{
+      --navy:#102235; --navy2:#162d44; --orange:#f58220; --orange2:#ff9d43;
+      --ink:#17212b; --muted:#667382; --line:#e7ebef; --soft:#f6f8fa; --white:#fff;
+      --shadow:0 18px 50px rgba(16,34,53,.10); --radius:20px;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(1160px,92%);margin:auto}
+    .topbar{background:var(--navy);color:#dbe5ef;font-size:13px}
+    .topbar .container{display:flex;justify-content:space-between;gap:20px;padding:8px 0}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(16,34,53,.08)}
+    .nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+    .brand img{width:48px;height:48px;object-fit:contain}
+    .brand span{font-size:14px;line-height:1.15;max-width:185px}
+    .links{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:650}
+    .links a{color:#344252}.links a:hover{color:var(--orange)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:12px 20px;font-weight:750;font-size:14px;border:1px solid transparent;cursor:pointer}
+    .btn-orange{background:var(--orange);color:#fff;box-shadow:0 10px 25px rgba(245,130,32,.22)}
+    .btn-orange:hover{background:#e97210}
+    .btn-outline{border-color:#d8dee5;color:var(--navy);background:#fff}
+    .menu{display:none;border:0;background:none;font-size:26px;color:var(--navy)}
+
+    .hero-slider{position:absolute;inset:0;z-index:0}
+    .slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;background-size:cover;background-position:center}
+    .slide.active{opacity:1}
+    .slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,27,42,.94) 0%,rgba(12,27,42,.78) 42%,rgba(12,27,42,.22) 78%,rgba(12,27,42,.25) 100%)}
+    .slider-dots{position:absolute;z-index:3;left:4%;bottom:38px;display:flex;gap:8px}
+    .dot{width:34px;height:4px;border:0;border-radius:10px;background:rgba(255,255,255,.38);cursor:pointer;padding:0}
+    .dot.active{background:var(--orange);width:56px}
+    .slider-arrow{position:absolute;z-index:4;top:50%;transform:translateY(-50%);width:52px;height:52px;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:rgba(5,16,28,.45);color:#fff;font-size:36px;line-height:1;cursor:pointer;backdrop-filter:blur(8px)}
+    .slider-arrow:hover{background:var(--orange);border-color:var(--orange)}
+    .slider-arrow.prev{left:24px}.slider-arrow.next{right:24px}
+    .hero-kicker{display:flex;align-items:center;gap:12px;color:#ffb66f;font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+    .hero-kicker:before{content:"";width:42px;height:3px;background:var(--orange);border-radius:5px}
+    .project-photo{height:190px;position:relative;background-size:cover;background-position:center}
+    .project-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,25,40,.02),rgba(10,25,40,.62))}
+    .project-photo span{position:absolute;z-index:2;left:18px;bottom:15px;color:#fff;font-weight:850;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+    .hero{position:relative;min-height:650px;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,27,43,.98) 0%,rgba(10,27,43,.88) 43%,rgba(10,27,43,.42) 72%,rgba(10,27,43,.35) 100%)}
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72}
+    .slide{background-color:#101f30;background-repeat:no-repeat}
+    .slide img{width:100%;height:100%;object-fit:cover}
+    .source-note{font-size:11px;color:#7a8793;margin-top:22px;line-height:1.5}
+    .hero-shape{position:absolute;right:-90px;bottom:-150px;width:470px;height:470px;background:var(--orange);transform:rotate(45deg);opacity:.88}
+    .hero-content{position:relative;z-index:2;color:#fff;padding:90px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#ffbd80;font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12px;margin-bottom:18px}
+    .eyebrow:before{content:"";width:34px;height:3px;background:var(--orange);border-radius:5px}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.03;margin:0 0 22px;max-width:800px;letter-spacing:-.04em}
+    .hero p{font-size:18px;max-width:720px;color:#e3ebf3;margin:0 0 32px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero .btn-outline{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}
+    .trust-strip{background:#fff;box-shadow:var(--shadow);margin-top:-46px;position:relative;z-index:5;border-radius:18px;padding:22px 28px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .stat{padding:8px 14px;border-right:1px solid var(--line)}
+    .stat:last-child{border:0}.stat strong{display:block;font-size:29px;color:var(--navy);line-height:1.1}.stat span{color:var(--muted);font-size:13px}
+    section{padding:92px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+    .kicker{color:var(--orange);font-weight:850;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+    h2{font-size:clamp(32px,4vw,48px);line-height:1.1;color:var(--navy);margin:8px 0 0;letter-spacing:-.03em}
+    .lead{max-width:650px;color:var(--muted);font-size:16px}
+    .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center}
+    .about-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:var(--soft)}
+    .about-img img{width:100%;height:440px;object-fit:cover}
+    .checklist{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0}
+    .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#334252}
+    .check b{color:var(--orange);font-size:17px}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff;transition:.25s;box-shadow:0 2px 0 rgba(0,0,0,.01)}
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#dce3e9}
+    .icon{width:48px;height:48px;border-radius:14px;background:#fff2e7;color:var(--orange);display:grid;place-items:center;font-size:23px;margin-bottom:18px}
+    .card h3{color:var(--navy);font-size:18px;margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .dark{background:var(--navy);color:#fff}.dark h2{color:#fff}.dark .lead{color:#b9c7d4}
+    .cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+    .cap{border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:26px;background:rgba(255,255,255,.035)}
+    .cap h3{margin:0 0 12px;color:#fff}.cap p{margin:0;color:#b9c7d4;font-size:14px}
+    .project-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:25px}
+    .filter{padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#566575;font-weight:700;cursor:pointer}
+    .filter.active,.filter:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .project{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:.25s}
+    .project:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .project-top{height:150px;background:linear-gradient(135deg,var(--navy),#24445f);position:relative;overflow:hidden}
+    .project-top:after{content:"";position:absolute;width:190px;height:190px;background:var(--orange);right:-85px;top:-85px;border-radius:50%;opacity:.95}
+    .project-top span{position:absolute;left:18px;bottom:15px;color:#fff;font-weight:800;font-size:13px;z-index:2}
+    .project-body{padding:20px}.project-body h3{font-size:16px;line-height:1.35;color:var(--navy);margin:0 0 8px}.project-body p{font-size:13px;color:var(--muted);margin:4px 0}.project-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.tag{background:#f3f6f8;color:#526170;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:750}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px}.data-table{border-collapse:collapse;width:100%;min-width:760px;background:#fff}.data-table th,.data-table td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);font-size:13px}.data-table th{background:var(--navy);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.data-table tr:last-child td{border-bottom:0}
+    .credentials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.credential{border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff}.credential strong{display:block;color:var(--navy);font-size:14px;margin-bottom:6px}.credential span{color:var(--muted);font-size:13px}
+    .contact{background:linear-gradient(135deg,#f7f9fb,#fff)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}.contact-item{display:flex;gap:14px;margin:18px 0}.contact-item .icon{flex:0 0 44px;margin:0}.contact-item strong{display:block;color:var(--navy);font-size:14px}.contact-item span{color:var(--muted);font-size:13px}
+    footer{background:#0b1b2b;color:#9eacba;padding:42px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.footer-brand{color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;gap:10px}.footer-brand img{width:42px;height:42px}.footer h4{color:#fff;margin:0 0 14px}.footer a:hover{color:#fff}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:20px}
+    .reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:950px){.links{display:none}.menu{display:block}.cards{grid-template-columns:1fr 1fr}.about-grid,.contact-grid,.cap-grid{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr 1fr}.credentials{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border:0}}
+    @media(max-width:620px){.slider-arrow{width:42px;height:42px;font-size:29px}.slider-arrow.prev{left:10px}.slider-arrow.next{right:10px}.slider-dots{left:50%;transform:translateX(-50%);bottom:24px}.topbar .container{display:block;text-align:center}.topbar .container span:last-child{display:none}.nav-inner{height:70px}.brand span{font-size:12px}.hero{min-height:610px}.hero-content{padding:70px 0}.hero p{font-size:16px}.trust-strip{margin-top:-25px;padding:16px}.stats,.cards,.project-grid,.credentials{grid-template-columns:1fr}.stat{border:0;border-bottom:1px solid var(--line);padding:12px}.stat:last-child{border:0}.section-head{display:block}.section-head .lead{margin-top:15px}.checklist{grid-template-columns:1fr}.about-img img{height:300px}.cap-grid{gap:14px}.contact-card{padding:22px}.footer-grid{grid-template-columns:1fr}.copyright{display:block}.copyright span{display:block;margin-top:7px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>UAE MEP Contractor | Vibrant Electromechanical Contracting LLC • Electrical • Mechanical • Electromechanical</span>
+      <span>+971 2 627 7580 &nbsp;|&nbsp; info@vibrant.ae</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <img src="assets/logo_new.jpeg" alt="Vibrant logo">
+        <span>VIBRANT ELECTROMECHANICAL CONTRACTING LLC</span>
+      </a>
+      <div class="links">
+        <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a>
+        <a href="#capability">Capability</a><a href="#contact">Contact</a>
+        <a class="btn btn-orange" href="mailto:info@vibrant.ae">Get in Touch</a>
+      </div>
+      <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
+
+  <div id="mobileMenu" style="display:none;background:#fff;border-bottom:1px solid #e7ebef">
+    <div class="container" style="padding:16px 0;display:grid;gap:12px;font-weight:700">
+      <a href="#about" onclick="toggleMenu()">About</a><a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#projects" onclick="toggleMenu()">Projects</a><a href="#capability" onclick="toggleMenu()">Capability</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-slider" aria-label="Vibrant project imagery">
+        <div class="slide active" style="background-image:url('https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Air_conditioning_ductwork_in_large_commercial_building,_Brisbane.jpg&width=2400')"></div>
+        <div class="slide" style="background-image:url('https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Control_panel_with_electrical_components_and_buttons.jpg&width=2400')"></div>
+        <div class="slide" style="background-image:url('https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400')"></div>
+        <div class="slide" style="background-image:url('https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Piping_pic1.JPG&width=2400')"></div>
+      </div>
+      <div class="hero-shape"></div>
+      <button class="slider-arrow prev" id="prevSlide" aria-label="Previous slide">‹</button>
+      <button class="slider-arrow next" id="nextSlide" aria-label="Next slide">›</button>
+      <div class="slider-dots" id="sliderDots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+        <button class="dot" aria-label="Slide 4"></button>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-kicker">Vibrant Electromechanical Contracting LLC</div>
+        <h1>Engineering systems. Built for performance.</h1>
+        <p>Professional MEP contracting, electrical, mechanical, HVAC and electromechanical solutions for commercial, residential and infrastructure projects across the UAE.</p>
+        <div class="hero-actions">
+          <a class="btn btn-orange" href="#projects">View Project Experience →</a>
+          <a class="btn btn-outline" href="https://wa.me/971556652211" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container trust-strip reveal">
+      <div class="stats">
+        <div class="stat"><strong>22+</strong><span>Major completed projects listed in company profile</span></div>
+        <div class="stat"><strong>2012+</strong><span>Project award history shown in references</span></div>
+        <div class="stat"><strong>4</strong><span>Core licensed business activities</span></div>
+        <div class="stat"><strong>UAE</strong><span>Project experience across Abu Dhabi, Al Ain, Dubai & Sharjah</span></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-img reveal"><img src="assets/company-collage.jpg" alt="Vibrant company profile collage"></div>
+        <div class="reveal">
+          <div class="kicker">About Vibrant</div>
+          <h2>Built around dependable MEP delivery.</h2>
+          <p class="lead">Vibrant Electromechanical Contracting LLC is presented in its prequalification profile as an MEP contractor covering design, build, construction, supply, installation, service, upgrade and maintenance of electro-mechanical systems, networks and utilities.</p>
+          <p class="lead">The company profile also highlights engineering coordination, documentation, submittals, shop and coordination drawings, commissioning, start-up, as-built documentation and delivery in line with consultant requirements, international standards, codes, safety and quality expectations.</p>
+          <div class="checklist">
+            <div class="check"><b>✓</b><span>Electrical construction & fitting</span></div>
+            <div class="check"><b>✓</b><span>Mechanical construction</span></div>
+            <div class="check"><b>✓</b><span>Electromechanical installation</span></div>
+            <div class="check"><b>✓</b><span>Maintenance & upgrades</span></div>
+            <div class="check"><b>✓</b><span>Engineering coordination</span></div>
+            <div class="check"><b>✓</b><span>Testing & commissioning</span></div>
+          </div>
+          <a class="btn btn-orange" href="#services">View Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="background:var(--soft)">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">What We Do</div><h2>Core MEP services</h2></div>
+          <p class="lead">A practical contracting capability covering electrical, mechanical and electromechanical works from engineering coordination through installation, testing and maintenance.</p>
+        </div>
+        <div class="cards">
+          <div class="card reveal"><div class="icon">⚡</div><h3>Electrical Works</h3><p>Electrical fitting contracting, electrical construction, power connection related works, distribution, lighting and associated installations.</p></div>
+          <div class="card reveal"><div class="icon">⚙</div><h3>Mechanical Works</h3><p>Mechanical construction and associated building services delivered in accordance with project requirements.</p></div>
+          <div class="card reveal"><div class="icon">❄</div><h3>HVAC & Building Services</h3><p>HVAC-related works and integrated MEP services for commercial, residential and institutional projects.</p></div>
+          <div class="card reveal"><div class="icon">🔧</div><h3>Maintenance & Upgrades</h3><p>Maintenance, refurbishment, upgrades, testing, commissioning and defect rectification support.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capability" class="dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">Capability</div><h2>From engineering to handover</h2></div>
+          <p class="lead">The profile identifies a delivery process that connects engineering coordination, approvals, site execution, testing and close-out documentation.</p>
+        </div>
+        <div class="cap-grid">
+          <div class="cap reveal"><h3>Engineering & Coordination</h3><p>Engineering, coordination, documentation, submittals, approvals, shop drawings and coordinating drawings.</p></div>
+          <div class="cap reveal"><h3>Construction & Installation</h3><p>Electrical, mechanical and electromechanical installation and construction activities across building projects.</p></div>
+          <div class="cap reveal"><h3>Testing & Commissioning</h3><p>Commissioning, start-up, testing and inspection activities with a focus on project specifications and regulatory requirements.</p></div>
+          <div class="cap reveal"><h3>Quality, Safety & Close-Out</h3><p>As-built documentation, quality requirements, safety practices, maintenance and DLP/defect rectification support.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">Project Experience</div><h2>Selected completed projects</h2></div>
+          <p class="lead">The following project references are reproduced from the submitted company prequalification profile.</p>
+        </div>
+        <div class="project-controls">
+          <button class="filter active" onclick="filterProjects('all',this)">All</button>
+          <button class="filter" onclick="filterProjects('abu',this)">Abu Dhabi</button>
+          <button class="filter" onclick="filterProjects('alain',this)">Al Ain</button>
+          <button class="filter" onclick="filterProjects('dubai',this)">Dubai / Sharjah</button>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section style="background:var(--soft)">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">Current Work</div><h2>Ongoing projects</h2></div>
+          <p class="lead">Current project information shown in the company profile.</p>
+        </div>
+        <div class="cards" style="grid-template-columns:1fr;margin-bottom:22px">
+          <div class="card reveal" style="display:flex;align-items:center;gap:22px;padding:18px 22px">
+            <img src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Air_conditioning_ductwork_in_large_commercial_building,_Brisbane.jpg&width=2400" alt="Ghuwaifat Border Project MEP works" style="width:220px;height:135px;object-fit:cover;border-radius:14px">
+            <div><div class="kicker">Featured Ongoing Project</div><h3 style="font-size:22px;margin:4px 0">Ghuwaifat Border Project – Phase 2</h3><p>Abu Dhabi • MEP Works • <strong>AED 30,000,000</strong></p></div>
+          </div>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="data-table">
+            <thead><tr><th>Project</th><th>Location</th><th>Main Contractor</th><th>Client</th><th>Scope</th></tr></thead>
+            <tbody>
+              <tr><td>Ghuwaifat Border Project – Phase 2</td><td>Ghuwaifat, Abu Dhabi</td><td>Vibrant Electromechanical Contracting LLC</td><td>Project / Client as per contract</td><td>MEP Works</td></tr>
+              <tr><td>Commercial Building for Mr. Saif Khamis at Khalifa City A</td><td>Khalifa City A, Abu Dhabi</td><td>Al Tharwaniah Building Contracting LLC</td><td>ADCE</td><td>Electrical & HVAC Works</td></tr>
+              <tr><td>Office Renovation at Tomou Tower</td><td>Reem Island, Abu Dhabi</td><td>Vibrant Electromechanical Contracting LLC – Branch of Abu Dhabi</td><td>Coevo Design Studio</td><td>Maintenance</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">Company Credentials</div><h2>Registration & capability snapshot</h2></div>
+          <p class="lead">Key corporate information appearing in the supplied prequalification documentation.</p>
+        </div>
+        <div class="credentials">
+          <div class="credential reveal"><strong>Legal Name</strong><span>Vibrant Electromechanical Contracting LLC</span></div>
+          <div class="credential reveal"><strong>Established</strong><span>23 June 2022</span></div>
+          <div class="credential reveal"><strong>Legal Form</strong><span>Limited Liability Company</span></div>
+          <div class="credential reveal"><strong>RAK Professional License</strong><span>No. 56210</span></div>
+          <div class="credential reveal"><strong>Abu Dhabi Branch License</strong><span>CN-5199433</span></div>
+          <div class="credential reveal"><strong>VAT Registration</strong><span>TRN 104150898500003 • Effective 01 December 2023</span></div>
+          <div class="credential reveal"><strong>Licensed Activities</strong><span>Electrical Fitting Contracting • Electrical Construction • Electromechanical Equipment Installation & Maintenance • Mechanical Construction</span></div>
+          <div class="credential reveal"><strong>Head Office</strong><span>Al Hussn West 4, Abu Dhabi, UAE</span></div>
+          <div class="credential reveal"><strong>Contact</strong><span>+971 2 627 7580 • info@vibrant.ae</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">Quality & Safety</div><h2>Quality-led project delivery.</h2></div>
+          <p class="lead">The supplied documentation includes dedicated QA/QC and HSE sections and project quality planning focused on compliance, safety, testing and timely delivery.</p>
+        </div>
+        <div class="cap-grid">
+          <div class="cap reveal"><h3>QA / QC</h3><p>Project quality planning, material compliance, inspections, testing and documentation aligned with project specifications and applicable standards.</p></div>
+          <div class="cap reveal"><h3>HSE</h3><p>Safety procedures, training, audits and dedicated safety coordination are identified within the project planning material.</p></div>
+          <div class="cap reveal"><h3>Commissioning</h3><p>Testing, inspection, commissioning and final approval are included in the delivery approach described for project works.</p></div>
+          <div class="cap reveal"><h3>DLP & Maintenance</h3><p>Warranty documentation states support for defects liability period and maintenance works in accordance with contractual obligations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">Contact</div><h2>Let's discuss your next project.</h2></div>
+          <p class="lead">For enquiries, prequalification requests, project opportunities and MEP contracting requirements, contact the team directly.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="contact-item"><div class="icon">☎</div><div><strong>Telephone</strong><span>+971 2 627 7580</span></div></div>
+            <div class="contact-item"><div class="icon">✉</div><div><strong>Email</strong><span>info@vibrant.ae</span></div></div>
+            <div class="contact-item"><div class="icon">⌖</div><div><strong>Head Office</strong><span>Al Hussn West 4, Abu Dhabi, UAE</span></div></div>
+            <div class="contact-item"><div class="icon">◉</div><div><strong>Ras Al Khaimah</strong><span>Julphar / Al Mataf Road, Ras Al Khaimah, UAE</span></div></div>
+          </div>
+          <div class="contact-card reveal" style="background:var(--navy);color:#fff">
+            <div class="kicker">Direct enquiry</div>
+            <h3 style="font-size:30px;margin:10px 0;color:#fff">Need an MEP contractor?</h3>
+            <p style="color:#b9c7d4">Send your project requirements, scope or prequalification request and our team can review it.</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:25px">
+              <a class="btn btn-orange" href="mailto:info@vibrant.ae">Email Us</a>
+              <a class="btn btn-outline" href="https://wa.me/971556652211" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo_new.jpeg" alt="">VIBRANT ELECTROMECHANICAL</div>
+        <p style="max-width:420px;font-size:13px">Electromechanical contracting, electrical and mechanical construction, installation and maintenance services in the UAE.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div style="display:grid;gap:7px;font-size:13px"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div style="font-size:13px;display:grid;gap:7px"><span>+971 2 627 7580</span><a href="mailto:info@vibrant.ae">info@vibrant.ae</a><span>Abu Dhabi, UAE</span></div>
+      </div>
+    </div>
+    <div class="container source-note" style="color:#8fa0b0;margin-top:28px">Hero imagery: Wikimedia Commons (CC0 / CC BY / CC BY-SA). Images are used as general MEP/construction visuals and are not represented as photographs of Vibrant projects. Attribution/licence details are listed in README.md.</div>
+    <div class="container copyright"><span>© <span id="year"></span> Vibrant Electromechanical Contracting LLC. All rights reserved.</span><span>Professional MEP Contracting • UAE</span></div>
+  </footer>
+
+<script>
+
+let slideIndex=0;
+const slides=[...document.querySelectorAll(".slide")];
+const dots=[...document.querySelectorAll(".dot")];
+function showSlide(i){
+  slideIndex=(i+slides.length)%slides.length;
+  slides.forEach((s,n)=>s.classList.toggle("active",n===slideIndex));
+  dots.forEach((d,n)=>d.classList.toggle("active",n===slideIndex));
+}
+dots.forEach((d,i)=>d.addEventListener("click",()=>showSlide(i)));
+document.getElementById("prevSlide").addEventListener("click",()=>showSlide(slideIndex-1));
+document.getElementById("nextSlide").addEventListener("click",()=>showSlide(slideIndex+1));
+setInterval(()=>showSlide(slideIndex+1),5500);
+
+const projects = [
+ {n:"Al Muhimat Tower (B4+G+M+42 Floors)",c:"H.H. Sheikh Omar Bin Zayed",loc:"Abu Dhabi",v:"AED 11,000,000",y:"2014",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Al Raha Beach Commercial Residential Building (B3+G+M+13 Floors + Roof)",c:"Mr. Mohamed Mubarak Al Mazrouei",loc:"Abu Dhabi",v:"AED 18,500,000",y:"2020",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"HCT Men & Women College",c:"HCT ADD",loc:"Ruwais – Abu Dhabi",v:"AED 12,500,000",y:"2012",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Piping_pic1.JPG&width=2400"},
+ {n:"Mohammad Bin Khalifa School",c:"Ministry of Education",loc:"Al Ain",v:"AED 22,500,000",y:"2020",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Al Ain Zoo",c:"Emirates International / Al Fahjan",loc:"Al Ain",v:"AED 34,300,000",y:"2020",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Jabal Hafeet Clinic",c:"Tamouh",loc:"Al Ain",v:"AED 8,200,000",y:"2020",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Emirati Housing Development – Retail 1 & 2",c:"Musanada",loc:"Jabal Hafeet – Al Ain",v:"AED 35,000,000",y:"2018",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Kitchen Extension at Beach Palace",c:"H.H. Sheikh Mansour Bin Zayed Al Nahyan",loc:"Abu Dhabi",v:"AED 16,300,000",y:"2021",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Air_conditioning_ductwork_in_large_commercial_building,_Brisbane.jpg&width=2400"},
+ {n:"BMW & MINI Showroom",c:"Al Saqr Properties Mgmt. LLC",loc:"Abu Dhabi",v:"AED 2,150,000",y:"2022",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Suad Lutfi Medical Center",c:"Dr. Suad Lutfi",loc:"Abu Dhabi",v:"AED 3,251,000",y:"2020",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Piping_pic1.JPG&width=2400"},
+ {n:"Owais Al Kami Mosque",c:"Awqaf",loc:"Al Ain",v:"AED 1,400,000",y:"2015",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Al Ain Lab",c:"Abu Dhabi Quality & Conformity Council",loc:"Al Ain",v:"AED 6,500,000",y:"2014",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Piping_pic1.JPG&width=2400"},
+ {n:"Command Military Works",c:"CMW",loc:"Dubai",v:"AED 1,366,000",y:"2022",f:"dubai",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Control_panel_with_electrical_components_and_buttons.jpg&width=2400"},
+ {n:"B+G+M+12 Floors Building",c:"Shaaban Abu Sajid Gulf International",loc:"Sharjah – Al Khan",v:"AED 1,300,000",y:"2016",f:"dubai",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"G+7 Building",c:"Mohammad Al Mazrouei",loc:"Dubai – Al Refaa",v:"AED 6,500,000",y:"2015",f:"dubai",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"A&B Partition Building G+7",c:"ADNIC",loc:"Abu Dhabi – Exhibition",v:"AED 400,000",y:"2019",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Control_panel_with_electrical_components_and_buttons.jpg&width=2400"},
+ {n:"Abu Dhabi Police Petrol Parking",c:"Abu Dhabi Police",loc:"Abu Dhabi",v:"AED 290,000,000",y:"—",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Control_panel_with_electrical_components_and_buttons.jpg&width=2400"},
+ {n:"Boundary Wall MEP Works for Graveyard",c:"ADM / DEC",loc:"Abu Dhabi",v:"AED 3,000,000",y:"—",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Air_conditioning_ductwork_in_large_commercial_building,_Brisbane.jpg&width=2400"},
+ {n:"Design & Build of Al Ain QCC Building (MEP & Design)",c:"—",loc:"Al Ain",v:"AED 140,000,000",y:"2014",f:"alain",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Abu Dhabi Capital Group HQ",c:"Abu Dhabi Capital Group",loc:"Abu Dhabi",v:"AED 1,500,000",y:"2023",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Staff Accommodation (90 Nos.) & 18 Offices at Beach Palace",c:"H.H. Sheikh Bin Zayed Al Nahyan",loc:"Abu Dhabi",v:"AED 6,000,000",y:"2023",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Tower_crane_Dubai_2010.jpg&width=2400"},
+ {n:"Substation Upgrade to 4200KVA at CCC Premises at Musaffah",c:"CCC (UE) SAL",loc:"Abu Dhabi",v:"AED 4,100,000",y:"2025",f:"abu",img:"https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Control_panel_with_electrical_components_and_buttons.jpg&width=2400"}
+];
+
+function renderProjects(filter="all"){
+  const grid=document.getElementById("projectGrid");
+  const list=filter==="all"?projects:projects.filter(p=>p.f===filter);
+  grid.innerHTML=list.map((p,i)=>`
+    <article class="project reveal">
+      <div class="project-photo" style="background-image:url('${p.img}')"><span>Project Reference • ${String(projects.indexOf(p)+1).padStart(2,"0")}</span></div>
+      <div class="project-body">
+        <h3>${p.n}</h3>
+        <p><b>Client:</b> ${p.c}</p>
+        <p><b>Location:</b> ${p.loc}</p>
+        <div class="project-meta"><span class="tag">${p.v}</span><span class="tag">${p.y}</span><span class="tag">MEP</span></div>
+      </div>
+    </article>`).join("");
+  observe();
+}
+function filterProjects(filter,btn){
+  document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
+  btn.classList.add("active"); renderProjects(filter);
+}
+function toggleMenu(){
+  const m=document.getElementById("mobileMenu");
+  m.style.display=m.style.display==="none"?"block":"none";
+}
+function observe(){
+  const els=document.querySelectorAll(".reveal:not(.show)");
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})
+  },{threshold:.08});
+  els.forEach(e=>io.observe(e));
+}
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProjects();
+observe();
+</script>
+</body>
+</html>
